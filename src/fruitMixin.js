@@ -10,5 +10,9 @@ export const fruitMixin = {
     filteredFruits() {
       return this.fruits.filter((element) => element.match(this.filterText))
     }
+  },
+
+  created() {
+    console.log('Local Mixin - Created Hook')
   }
 }
